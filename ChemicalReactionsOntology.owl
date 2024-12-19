@@ -1,0 +1,633 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ConsistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ConsistsOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#RequiresCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#RequiresCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasProduct">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Reactant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasAtomicNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasAtomicNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasChemicalFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasChemicalFormula">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasMolecularWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasMolecularWeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactionRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactionRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Catalyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Catalyst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalConcept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasProduct"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactant"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Reactant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#CombustionReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#CombustionReaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactant"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasChemicalFormula"/>
+                                <owl:hasValue>O2</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ConsistsOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#DecompositionReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#DecompositionReaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasProduct"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactant"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionComponent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Reactant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Reactant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Reactant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#SynthesisReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#SynthesisReaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactant"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalSubstance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasProduct"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ReactionCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Ammonia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Ammonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:hasChemicalFormula>NH3</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Calcium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Calcium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>Ca</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Calcium_Carbonate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Calcium_Carbonate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Calcium"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen"/>
+        <untitled-ontology-8:hasChemicalFormula>CaCO3</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>C</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon_Dioxide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon_Dioxide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen"/>
+        <untitled-ontology-8:hasChemicalFormula>CO2</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Chlorine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Chlorine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>CL</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Glucose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Glucose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:hasChemicalFormula>C6H12O6</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrochloric_Acid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrochloric_Acid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Chlorine"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen"/>
+        <untitled-ontology-8:hasChemicalFormula>HCl</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>H</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen_Peroxide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen_Peroxide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen"/>
+        <untitled-ontology-8:hasChemicalFormula>H2O2</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen_Peroxide_Decomposition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen_Peroxide_Decomposition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <untitled-ontology-8:hasProduct rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen"/>
+        <untitled-ontology-8:hasProduct rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water"/>
+        <untitled-ontology-8:hasReactant rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen_Peroxide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>Fe</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Methane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Methane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen"/>
+        <untitled-ontology-8:hasChemicalFormula>CH4</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Methane_Combustion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Methane_Combustion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <untitled-ontology-8:hasProduct rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Carbon_Dioxide"/>
+        <untitled-ontology-8:hasProduct rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water"/>
+        <untitled-ontology-8:hasReactant rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Methane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Neutralization_Reaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Neutralization_Reaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <untitled-ontology-8:hasProduct rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium_Chloride"/>
+        <untitled-ontology-8:hasProduct rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water"/>
+        <untitled-ontology-8:hasReactant rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrochloric_Acid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Nitrogen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Nitrogen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>N</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>O</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Phosphorus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Phosphorus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>P</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>Na</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium_Chloride -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium_Chloride">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Chlorine"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium"/>
+        <untitled-ontology-8:hasChemicalFormula>NaCl</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium_Hydroxide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium_Hydroxide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sodium"/>
+        <untitled-ontology-8:hasChemicalFormula>NaOH</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sulfur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Sulfur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>S</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Compound"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen"/>
+        <untitled-ontology-8:ConsistsOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Oxygen"/>
+        <untitled-ontology-8:hasChemicalFormula>H2O</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water_Formation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water_Formation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ChemicalReaction"/>
+        <untitled-ontology-8:hasProduct rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Water"/>
+        <untitled-ontology-8:hasReactant rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Hydrogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Zinc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Zinc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Element"/>
+        <untitled-ontology-8:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-8:hasAtomicNumber>
+        <untitled-ontology-8:hasChemicalFormula>Zn</untitled-ontology-8:hasChemicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Catalyst"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Pressure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#Temperature"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#CombustionReaction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#DecompositionReaction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#SynthesisReaction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#ConsistsOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#RequiresCondition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasReactant"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasAtomicNumber"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasChemicalFormula"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-8#hasMolecularWeight"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
